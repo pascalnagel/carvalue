@@ -48,4 +48,4 @@ predprice = np.exp(model.predict(predX))
 # Linear regression to results to give a rough estimate of value decay (slope)
 slope, intercept, r_value, p_value, std_err = stats.linregress(np.linspace(25000,225000,1000), predprice)
 
-print(-slope)
+print("Value decay per driven km: ", -slope)
